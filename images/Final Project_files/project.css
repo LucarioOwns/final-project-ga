@@ -73,15 +73,14 @@
 
 
 body {
- background: 	#558dad;
+ background: 	#DCDCDC;
 }
 
 h1 {  
   display: block;
   font-family: 'Oleo Script', cursive;
   font-size: 40px;
-  
-  color: #deed0e;
+  color: #00aeff;
   text-shadow: 1px 1px rgba(0,0,0,.4);
   text-align: center;
   margin-block-start: 0.67em;
@@ -104,7 +103,6 @@ h1 {
   /* display: flex; */
   /* justify-content: center; */
   font-family: Noto Sans,sans-serif;
-  
 }
 
 #search-bar {
@@ -133,23 +131,9 @@ h1 {
   margin-right: 40px;
 }
 
-.parent {
-  position: relative;
-}
 
 #no-results {
-  display: none;
-  font-family: 'Oleo Script', cursive;
-  font-size: 20px;
-  background-color: #f23a3a;
-  color: #deed0e;
-  padding: 5px;
-  margin: 32px;
-  width: 100px;
-  margin-left: 0%;
-  /* top: 129px; */
-  position: absolute;
-  opacity: 0;
+  
 }
 
 input {
@@ -179,18 +163,4 @@ footer div {
   justify-content: center;
   font-family: Noto Sans,sans-serif;
  
-}
-
-
-
-/*  MEDIA QUERIES =================================== */
-@media only screen and (max-width: 1040px) {
-  #books {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .book {
-    width: 65%;
-  }
 }

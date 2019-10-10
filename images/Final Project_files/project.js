@@ -82,10 +82,7 @@ $('#search-bar').on('submit', function(event) {
   // const booksArr = book[i].title;
   // console.log(booksArr);
   $(".book").remove();
-  $(".no-results-content").remove();
 
-
- 
   for (let i = 0; i < book.length; i++) {
     bookTitleLowercase = book[i].title.toLowerCase();
     inputValLowercase = inputVal.toLowerCase();
@@ -104,16 +101,8 @@ $('#search-bar').on('submit', function(event) {
   }
 
   if ($('.book').length === 0) {
-    
     console.log('No results');
-    $("#no-results").append("<div class='no-results-content'>no results</div>").show().animate({
-
-      // top: '1px',
-      opacity: "1"}, 
-      200);
-
-      //  $(".no-results-content").
-
+    $("#no-results").append("<div class='no-results-content'>no results</div>");
   }
   else {
     $(".book").fadeIn(2000);
